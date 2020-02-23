@@ -26,14 +26,15 @@ public class EmployeeServiceImp implements EmployeeService {
 	}
 
 	@Override
-	public Employee getEmployee(int id) {
+	public Employee getEmployee(long id) {
 		return this.employeeDAO.findById(id);
 		
 	}
 
 	@Override
-	public void createEmployee(Employee employee) {
-		// TODO Auto-generated method stub
+	public void save(Employee employee) {
+		employee.setId(0);
+		this.employeeDAO.save(employee);
 		
 	}
 

@@ -8,9 +8,9 @@ public interface EmployeeService {
 	
 	public List<Employee> listEmployees();
 	
-	public Employee getEmployee(int id);
+	public Employee getEmployee(long id);
 	
-	public void createEmployee(Employee employee);
+	public void save(Employee employee);
 	
 	public void deleteEmployee(int id);
 	

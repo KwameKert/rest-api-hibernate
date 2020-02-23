@@ -47,7 +47,7 @@ public class EmployeeDAOHibernateImpl implements EmployeeDAO {
 
 
 	@Override
-	public Employee findById(int theId) {
+	public Employee findById(long theId) {
 		
 		//get session 
 		Session currentSession = entityManager.unwrap(Session.class);

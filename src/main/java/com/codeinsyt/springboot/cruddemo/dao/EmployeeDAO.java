@@ -9,7 +9,7 @@ public interface EmployeeDAO {
 	public List<Employee> findAll();
 	
 	//get employee
-	public Employee findById(int theId);
+	public Employee findById(long theId);
 	
 	//update employee
 	public void save(Employee employer);

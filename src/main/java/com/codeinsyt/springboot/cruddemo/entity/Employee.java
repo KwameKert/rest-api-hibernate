@@ -31,6 +31,16 @@ public class Employee {
 	}
 	
 	
+	public long getId() {
+		return id;
+	}
+
+
+	public void setId(long id) {
+		this.id = id;
+	}
+
+
 	public Employee(String firstName, String lastName, String email) {
 		super();
 		this.firstName = firstName;
@@ -61,6 +71,7 @@ public class Employee {
 	public void setEmail(String email) {
 		this.email = email;
 	}
+	
 	
 	@Override
 	public String toString() {
