@@ -5,8 +5,19 @@ import java.util.List;
 import com.codeinsyt.springboot.cruddemo.entity.Employee;
 
 public interface EmployeeDAO {
-	
+	//list employees
 	public List<Employee> findAll();
+	
+	//get employee
+	public Employee findById(int theId);
+	
+	//update employee
+	public void save(Employee employer);
+	
+	//delete employee
+	public void deleteById(int theId);
+	
+	
 	
 
 }
