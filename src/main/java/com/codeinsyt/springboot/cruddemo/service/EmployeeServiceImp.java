@@ -33,13 +33,11 @@ public class EmployeeServiceImp implements EmployeeService {
 
 	@Override
 	public void save(Employee employee) {
-		employee.setId(0);
 		this.employeeDAO.save(employee);
-		
 	}
 
 	@Override
-	public void deleteEmployee(int id) {
+	public void deleteEmployee(long id) {
 		this.employeeDAO.deleteById(id);
 		// TODO Auto-generated method stub
 		

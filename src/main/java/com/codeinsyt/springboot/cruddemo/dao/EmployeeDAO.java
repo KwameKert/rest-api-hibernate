@@ -15,7 +15,7 @@ public interface EmployeeDAO {
 	public void save(Employee employer);
 	
 	//delete employee
-	public void deleteById(int theId);
+	public void deleteById(long theId);
 	
 	
 	
