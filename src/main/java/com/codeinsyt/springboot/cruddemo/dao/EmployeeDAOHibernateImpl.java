@@ -1,9 +1,8 @@
-package dao;
+package com.codeinsyt.springboot.cruddemo.dao;
 
 import java.util.List;
 
 import javax.persistence.EntityManager;
-import javax.persistence.criteria.CriteriaQuery;
 import javax.transaction.Transactional;
 
 import org.hibernate.Session;
@@ -11,7 +10,7 @@ import org.hibernate.query.Query;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import entity.Employee;
+import com.codeinsyt.springboot.cruddemo.entity.Employee;
 
 
 @Repository
@@ -39,6 +38,8 @@ public class EmployeeDAOHibernateImpl implements EmployeeDAO {
 		
 		//execute query
 		List<Employee> employees = theQuery.getResultList();
+		
+		//currentSession.close();
 		
 		return employees;
 	}

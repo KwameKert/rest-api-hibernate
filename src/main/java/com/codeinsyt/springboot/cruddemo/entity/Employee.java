@@ -1,4 +1,4 @@
-package entity;
+package com.codeinsyt.springboot.cruddemo.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -13,6 +13,7 @@ public class Employee {
 
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@Column(name="id")
 	private long id;
 	
 	@Column(name="first_name")
